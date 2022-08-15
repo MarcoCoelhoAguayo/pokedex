@@ -1,0 +1,53 @@
+
+
+
+.viewer {
+    width: 660px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    overflow-y: scroll;
+    background-color: #E6D9FA;
+    border-radius: 5px;
+    row-gap: 5px;
+}
+
+.pokemon-pic {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.the-chose-one {
+  background-color: #8A76B8;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #957CC7;
+    border-radius: 50px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  @media screen and (min-width: 1162px) {
+    .viewer {
+      width: 70%;
+    }
+  }
